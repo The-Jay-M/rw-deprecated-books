@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D14FD42D194746D0005900AB /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D14FD42C194746D0005900AB /* GameScene.m */; };
+		D14FD430194746DF005900AB /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D14FD42F194746DF005900AB /* GameLayer.m */; };
+		D14FD43619474BAE005900AB /* HudLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D14FD43519474BAE005900AB /* HudLayer.m */; };
+		D14FD45719475040005900AB /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = D14FD44C19475040005900AB /* SKAction+SKTExtras.m */; };
+		D14FD45819475040005900AB /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = D14FD44E19475040005900AB /* SKEmitterNode+SKTExtras.m */; };
+		D14FD45919475040005900AB /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = D14FD45019475040005900AB /* SKNode+SKTExtras.m */; };
+		D14FD45A19475040005900AB /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = D14FD45219475040005900AB /* SKTAudio.m */; };
+		D14FD45B19475040005900AB /* SKTTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D14FD45419475040005900AB /* SKTTextureCache.m */; };
+		D14FD45C19475040005900AB /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = D14FD45619475040005900AB /* SKTUtils.mm */; };
+		D1688F261945C654007973C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1688F251945C654007973C6 /* Foundation.framework */; };
+		D1688F281945C654007973C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1688F271945C654007973C6 /* CoreGraphics.framework */; };
+		D1688F2A1945C654007973C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1688F291945C654007973C6 /* UIKit.framework */; };
+		D1688F2C1945C654007973C6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1688F2B1945C654007973C6 /* SpriteKit.framework */; };
+		D1688F321945C654007973C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1688F301945C654007973C6 /* InfoPlist.strings */; };
+		D1688F341945C654007973C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1688F331945C654007973C6 /* main.m */; };
+		D1688F381945C654007973C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1688F371945C654007973C6 /* AppDelegate.m */; };
+		D1688F3B1945C654007973C6 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1688F391945C654007973C6 /* Main_iPhone.storyboard */; };
+		D1688F3E1945C654007973C6 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1688F3C1945C654007973C6 /* Main_iPad.storyboard */; };
+		D1688F411945C654007973C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1688F401945C654007973C6 /* ViewController.m */; };
+		D1688F481945C654007973C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1688F471945C654007973C6 /* Images.xcassets */; };
+		D1688F4F1945C654007973C6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1688F4E1945C654007973C6 /* XCTest.framework */; };
+		D1688F501945C654007973C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1688F251945C654007973C6 /* Foundation.framework */; };
+		D1688F511945C654007973C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1688F291945C654007973C6 /* UIKit.framework */; };
+		D1688F591945C654007973C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1688F571945C654007973C6 /* InfoPlist.strings */; };
+		D1688F5B1945C654007973C6 /* PompaDroidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1688F5A1945C654007973C6 /* PompaDroidTests.m */; };
+		D16B91E6194725A900280537 /* bg_title.png in Resources */ = {isa = PBXBuildFile; fileRef = D16B91DD194725A900280537 /* bg_title.png */; };
+		D16B91E7194725A900280537 /* joypad.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D16B91DE194725A900280537 /* joypad.atlas */; };
+		D16B91E8194725A900280537 /* map_level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = D16B91DF194725A900280537 /* map_level1.tmx */; };
+		D16B91E9194725A900280537 /* sprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = D16B91E1194725A900280537 /* sprites.plist */; };
+		D16B91EA194725A900280537 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = D16B91E2194725A900280537 /* sprites.png */; };
+		D16B91EB194725A900280537 /* tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = D16B91E3194725A900280537 /* tiles.png */; };
+		D16B91EC194725A900280537 /* txt_title.png in Resources */ = {isa = PBXBuildFile; fileRef = D16B91E4194725A900280537 /* txt_title.png */; };
+		D16B91ED194725A900280537 /* txt_touchtostart.png in Resources */ = {isa = PBXBuildFile; fileRef = D16B91E5194725A900280537 /* txt_touchtostart.png */; };
+		D16B91F119472AFC00280537 /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D16B91F019472AFC00280537 /* TitleScene.m */; };
+		D17B04C719484164004BB702 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = D17B04C319484164004BB702 /* JSTileMap.m */; };
+		D17B04C819484164004BB702 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D17B04C519484164004BB702 /* LFCGzipUtility.m */; };
+		D17B04C919484164004BB702 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D17B04C619484164004BB702 /* LICENSE.txt */; };
+		D17B04CB1948419C004BB702 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D17B04CA1948419C004BB702 /* libz.dylib */; };
+		D17B04CF19484321004BB702 /* ActionSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D17B04CE19484321004BB702 /* ActionSprite.m */; };
+		D17B04D219484389004BB702 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = D17B04D119484389004BB702 /* Hero.m */; };
+		D17B04D619484440004BB702 /* ActionDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = D17B04D519484440004BB702 /* ActionDPad.m */; };
+		D17B04D919485328004BB702 /* ActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D17B04D819485328004BB702 /* ActionButton.m */; };
+		D17B04DC19485893004BB702 /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = D17B04DB19485893004BB702 /* Robot.m */; };
+		D17B04DF194858C7004BB702 /* AnimationMember.m in Sources */ = {isa = PBXBuildFile; fileRef = D17B04DE194858C7004BB702 /* AnimationMember.m */; };
+		D17D1AA219489AC1007BF819 /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = D17D1AA119489AC1007BF819 /* Weapon.m */; };
+		D17D1AA519489B44007BF819 /* Gauntlets.m in Sources */ = {isa = PBXBuildFile; fileRef = D17D1AA419489B44007BF819 /* Gauntlets.m */; };
+		D17D1AA91948A03A007BF819 /* MapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D17D1AA81948A03A007BF819 /* MapObject.m */; };
+		D17D1AAC1948A05F007BF819 /* TrashCan.m in Sources */ = {isa = PBXBuildFile; fileRef = D17D1AAB1948A05F007BF819 /* TrashCan.m */; };
+		D19F642C1948B41E00D7A950 /* blip.caf in Resources */ = {isa = PBXBuildFile; fileRef = D19F64261948B41E00D7A950 /* blip.caf */; };
+		D19F642D1948B41E00D7A950 /* enemydeath.caf in Resources */ = {isa = PBXBuildFile; fileRef = D19F64271948B41E00D7A950 /* enemydeath.caf */; };
+		D19F642E1948B41E00D7A950 /* herodeath.caf in Resources */ = {isa = PBXBuildFile; fileRef = D19F64281948B41E00D7A950 /* herodeath.caf */; };
+		D19F642F1948B41E00D7A950 /* hit0.caf in Resources */ = {isa = PBXBuildFile; fileRef = D19F64291948B41E00D7A950 /* hit0.caf */; };
+		D19F64301948B41E00D7A950 /* hit1.caf in Resources */ = {isa = PBXBuildFile; fileRef = D19F642A1948B41E00D7A950 /* hit1.caf */; };
+		D19F64311948B41E00D7A950 /* latin_industries.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D19F642B1948B41E00D7A950 /* latin_industries.aifc */; };
+		D1FA2B7D1948631C00C0C103 /* DebugLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA2B7C1948631C00C0C103 /* DebugLayer.m */; };
+		D1FA2B811948677100C0C103 /* WeightedDecision.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA2B801948677100C0C103 /* WeightedDecision.m */; };
+		D1FA2B841948679200C0C103 /* ArtificialIntelligence.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA2B831948679200C0C103 /* ArtificialIntelligence.m */; };
+		D1FA2B89194871D500C0C103 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA2B88194871D500C0C103 /* LoadingScene.m */; };
+		D1FA2B8C1948755E00C0C103 /* 04b03.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1FA2B8B1948755E00C0C103 /* 04b03.ttf */; };
+		D1FA2B8F1948777F00C0C103 /* UIColor+BGSK.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA2B8E1948777F00C0C103 /* UIColor+BGSK.m */; };
+		D1FA2B931948797A00C0C103 /* DamageNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA2B921948797A00C0C103 /* DamageNumber.m */; };
+		D1FA2B9619487A8A00C0C103 /* HitEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA2B9519487A8A00C0C103 /* HitEffect.m */; };
+		D1FA2B9919487BE400C0C103 /* Boss.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA2B9819487BE400C0C103 /* Boss.m */; };
+		D1FA2B9B19487C4E00C0C103 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1FA2B9A19487C4E00C0C103 /* Levels.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1688F521945C654007973C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1688F1A1945C653007973C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1688F211945C653007973C6;
+			remoteInfo = PompaDroid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D14FD42919474065005900AB /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		D14FD42B194746D0005900AB /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		D14FD42C194746D0005900AB /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		D14FD42E194746DF005900AB /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		D14FD42F194746DF005900AB /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
+		D14FD43419474BAE005900AB /* HudLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudLayer.h; sourceTree = "<group>"; };
+		D14FD43519474BAE005900AB /* HudLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudLayer.m; sourceTree = "<group>"; };
+		D14FD44B19475040005900AB /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
+		D14FD44C19475040005900AB /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
+		D14FD44D19475040005900AB /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
+		D14FD44E19475040005900AB /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
+		D14FD44F19475040005900AB /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
+		D14FD45019475040005900AB /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
+		D14FD45119475040005900AB /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
+		D14FD45219475040005900AB /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
+		D14FD45319475040005900AB /* SKTTextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTTextureCache.h; sourceTree = "<group>"; };
+		D14FD45419475040005900AB /* SKTTextureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTTextureCache.m; sourceTree = "<group>"; };
+		D14FD45519475040005900AB /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		D14FD45619475040005900AB /* SKTUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKTUtils.mm; sourceTree = "<group>"; };
+		D1688F221945C653007973C6 /* PompaDroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PompaDroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1688F251945C654007973C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D1688F271945C654007973C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D1688F291945C654007973C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D1688F2B1945C654007973C6 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		D1688F2F1945C654007973C6 /* PompaDroid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PompaDroid-Info.plist"; sourceTree = "<group>"; };
+		D1688F311945C654007973C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D1688F331945C654007973C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1688F351945C654007973C6 /* PompaDroid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PompaDroid-Prefix.pch"; sourceTree = "<group>"; };
+		D1688F361945C654007973C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D1688F371945C654007973C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D1688F3A1945C654007973C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D1688F3D1945C654007973C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D1688F3F1945C654007973C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D1688F401945C654007973C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D1688F471945C654007973C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D1688F4D1945C654007973C6 /* PompaDroidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PompaDroidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1688F4E1945C654007973C6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D1688F561945C654007973C6 /* PompaDroidTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PompaDroidTests-Info.plist"; sourceTree = "<group>"; };
+		D1688F581945C654007973C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D1688F5A1945C654007973C6 /* PompaDroidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PompaDroidTests.m; sourceTree = "<group>"; };
+		D16B91DD194725A900280537 /* bg_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_title.png; sourceTree = "<group>"; };
+		D16B91DE194725A900280537 /* joypad.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = joypad.atlas; sourceTree = "<group>"; };
+		D16B91DF194725A900280537 /* map_level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = map_level1.tmx; sourceTree = "<group>"; };
+		D16B91E1194725A900280537 /* sprites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sprites.plist; sourceTree = "<group>"; };
+		D16B91E2194725A900280537 /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
+		D16B91E3194725A900280537 /* tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiles.png; sourceTree = "<group>"; };
+		D16B91E4194725A900280537 /* txt_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = txt_title.png; sourceTree = "<group>"; };
+		D16B91E5194725A900280537 /* txt_touchtostart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = txt_touchtostart.png; sourceTree = "<group>"; };
+		D16B91EF19472AFC00280537 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
+		D16B91F019472AFC00280537 /* TitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScene.m; sourceTree = "<group>"; };
+		D17B04C219484164004BB702 /* JSTileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
+		D17B04C319484164004BB702 /* JSTileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTileMap.m; sourceTree = "<group>"; };
+		D17B04C419484164004BB702 /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
+		D17B04C519484164004BB702 /* LFCGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCGzipUtility.m; sourceTree = "<group>"; };
+		D17B04C619484164004BB702 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D17B04CA1948419C004BB702 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D17B04CD19484321004BB702 /* ActionSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSprite.h; sourceTree = "<group>"; };
+		D17B04CE19484321004BB702 /* ActionSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSprite.m; sourceTree = "<group>"; };
+		D17B04D019484389004BB702 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		D17B04D119484389004BB702 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		D17B04D419484440004BB702 /* ActionDPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionDPad.h; sourceTree = "<group>"; };
+		D17B04D519484440004BB702 /* ActionDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionDPad.m; sourceTree = "<group>"; };
+		D17B04D719485328004BB702 /* ActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionButton.h; sourceTree = "<group>"; };
+		D17B04D819485328004BB702 /* ActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionButton.m; sourceTree = "<group>"; };
+		D17B04DA19485893004BB702 /* Robot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Robot.h; sourceTree = "<group>"; };
+		D17B04DB19485893004BB702 /* Robot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Robot.m; sourceTree = "<group>"; };
+		D17B04DD194858C7004BB702 /* AnimationMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationMember.h; sourceTree = "<group>"; };
+		D17B04DE194858C7004BB702 /* AnimationMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationMember.m; sourceTree = "<group>"; };
+		D17D1AA019489AC1007BF819 /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weapon.h; sourceTree = "<group>"; };
+		D17D1AA119489AC1007BF819 /* Weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weapon.m; sourceTree = "<group>"; };
+		D17D1AA319489B44007BF819 /* Gauntlets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gauntlets.h; sourceTree = "<group>"; };
+		D17D1AA419489B44007BF819 /* Gauntlets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gauntlets.m; sourceTree = "<group>"; };
+		D17D1AA71948A03A007BF819 /* MapObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapObject.h; sourceTree = "<group>"; };
+		D17D1AA81948A03A007BF819 /* MapObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapObject.m; sourceTree = "<group>"; };
+		D17D1AAA1948A05F007BF819 /* TrashCan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrashCan.h; sourceTree = "<group>"; };
+		D17D1AAB1948A05F007BF819 /* TrashCan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrashCan.m; sourceTree = "<group>"; };
+		D19F64261948B41E00D7A950 /* blip.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = blip.caf; sourceTree = "<group>"; };
+		D19F64271948B41E00D7A950 /* enemydeath.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = enemydeath.caf; sourceTree = "<group>"; };
+		D19F64281948B41E00D7A950 /* herodeath.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = herodeath.caf; sourceTree = "<group>"; };
+		D19F64291948B41E00D7A950 /* hit0.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hit0.caf; sourceTree = "<group>"; };
+		D19F642A1948B41E00D7A950 /* hit1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hit1.caf; sourceTree = "<group>"; };
+		D19F642B1948B41E00D7A950 /* latin_industries.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = latin_industries.aifc; sourceTree = "<group>"; };
+		D1FA2B7B1948631C00C0C103 /* DebugLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugLayer.h; sourceTree = "<group>"; };
+		D1FA2B7C1948631C00C0C103 /* DebugLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugLayer.m; sourceTree = "<group>"; };
+		D1FA2B7F1948677100C0C103 /* WeightedDecision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightedDecision.h; sourceTree = "<group>"; };
+		D1FA2B801948677100C0C103 /* WeightedDecision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightedDecision.m; sourceTree = "<group>"; };
+		D1FA2B821948679200C0C103 /* ArtificialIntelligence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtificialIntelligence.h; sourceTree = "<group>"; };
+		D1FA2B831948679200C0C103 /* ArtificialIntelligence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtificialIntelligence.m; sourceTree = "<group>"; };
+		D1FA2B87194871D500C0C103 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
+		D1FA2B88194871D500C0C103 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
+		D1FA2B8B1948755E00C0C103 /* 04b03.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 04b03.ttf; sourceTree = "<group>"; };
+		D1FA2B8D1948777F00C0C103 /* UIColor+BGSK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BGSK.h"; sourceTree = "<group>"; };
+		D1FA2B8E1948777F00C0C103 /* UIColor+BGSK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BGSK.m"; sourceTree = "<group>"; };
+		D1FA2B911948797A00C0C103 /* DamageNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DamageNumber.h; sourceTree = "<group>"; };
+		D1FA2B921948797A00C0C103 /* DamageNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DamageNumber.m; sourceTree = "<group>"; };
+		D1FA2B9419487A8A00C0C103 /* HitEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitEffect.h; sourceTree = "<group>"; };
+		D1FA2B9519487A8A00C0C103 /* HitEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitEffect.m; sourceTree = "<group>"; };
+		D1FA2B9719487BE400C0C103 /* Boss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boss.h; sourceTree = "<group>"; };
+		D1FA2B9819487BE400C0C103 /* Boss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Boss.m; sourceTree = "<group>"; };
+		D1FA2B9A19487C4E00C0C103 /* Levels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1688F1F1945C653007973C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17B04CB1948419C004BB702 /* libz.dylib in Frameworks */,
+				D1688F281945C654007973C6 /* CoreGraphics.framework in Frameworks */,
+				D1688F2A1945C654007973C6 /* UIKit.framework in Frameworks */,
+				D1688F2C1945C654007973C6 /* SpriteKit.framework in Frameworks */,
+				D1688F261945C654007973C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1688F4A1945C654007973C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1688F4F1945C654007973C6 /* XCTest.framework in Frameworks */,
+				D1688F511945C654007973C6 /* UIKit.framework in Frameworks */,
+				D1688F501945C654007973C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D14FD42A194746C2005900AB /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				D14FD42B194746D0005900AB /* GameScene.h */,
+				D14FD42C194746D0005900AB /* GameScene.m */,
+				D14FD42E194746DF005900AB /* GameLayer.h */,
+				D14FD42F194746DF005900AB /* GameLayer.m */,
+				D14FD43419474BAE005900AB /* HudLayer.h */,
+				D14FD43519474BAE005900AB /* HudLayer.m */,
+				D1FA2B7B1948631C00C0C103 /* DebugLayer.h */,
+				D1FA2B7C1948631C00C0C103 /* DebugLayer.m */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		D14FD44A19475040005900AB /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				D14FD44B19475040005900AB /* SKAction+SKTExtras.h */,
+				D14FD44C19475040005900AB /* SKAction+SKTExtras.m */,
+				D14FD44D19475040005900AB /* SKEmitterNode+SKTExtras.h */,
+				D14FD44E19475040005900AB /* SKEmitterNode+SKTExtras.m */,
+				D14FD44F19475040005900AB /* SKNode+SKTExtras.h */,
+				D14FD45019475040005900AB /* SKNode+SKTExtras.m */,
+				D14FD45119475040005900AB /* SKTAudio.h */,
+				D14FD45219475040005900AB /* SKTAudio.m */,
+				D14FD45319475040005900AB /* SKTTextureCache.h */,
+				D14FD45419475040005900AB /* SKTTextureCache.m */,
+				D14FD45519475040005900AB /* SKTUtils.h */,
+				D14FD45619475040005900AB /* SKTUtils.mm */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+		D1688F191945C653007973C6 = {
+			isa = PBXGroup;
+			children = (
+				D1688F2D1945C654007973C6 /* PompaDroid */,
+				D1688F541945C654007973C6 /* PompaDroidTests */,
+				D1688F241945C653007973C6 /* Frameworks */,
+				D1688F231945C653007973C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1688F231945C653007973C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1688F221945C653007973C6 /* PompaDroid.app */,
+				D1688F4D1945C654007973C6 /* PompaDroidTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1688F241945C653007973C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D17B04CA1948419C004BB702 /* libz.dylib */,
+				D1688F251945C654007973C6 /* Foundation.framework */,
+				D1688F271945C654007973C6 /* CoreGraphics.framework */,
+				D1688F291945C654007973C6 /* UIKit.framework */,
+				D1688F2B1945C654007973C6 /* SpriteKit.framework */,
+				D1688F4E1945C654007973C6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1688F2D1945C654007973C6 /* PompaDroid */ = {
+			isa = PBXGroup;
+			children = (
+				D17D1AA61948A029007BF819 /* MapObjects */,
+				D17D1A9F19489AB7007BF819 /* Weapons */,
+				D1FA2B901948796500C0C103 /* Effects */,
+				D1FA2B7E1948676500C0C103 /* AI */,
+				D17B04D319484433004BB702 /* Controls */,
+				D17B04CC19484314004BB702 /* Characters */,
+				D17B04C119484164004BB702 /* JSTileMap */,
+				D14FD44A19475040005900AB /* SKTUtils */,
+				D14FD42A194746C2005900AB /* Game */,
+				D16B91EE19472AE100280537 /* Menus */,
+				D1688F361945C654007973C6 /* AppDelegate.h */,
+				D1688F371945C654007973C6 /* AppDelegate.m */,
+				D1688F391945C654007973C6 /* Main_iPhone.storyboard */,
+				D1688F3C1945C654007973C6 /* Main_iPad.storyboard */,
+				D1688F3F1945C654007973C6 /* ViewController.h */,
+				D1688F401945C654007973C6 /* ViewController.m */,
+				D1688F471945C654007973C6 /* Images.xcassets */,
+				D16B91DB1947259200280537 /* Resources */,
+				D1688F2E1945C654007973C6 /* Supporting Files */,
+			);
+			path = PompaDroid;
+			sourceTree = "<group>";
+		};
+		D1688F2E1945C654007973C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1688F2F1945C654007973C6 /* PompaDroid-Info.plist */,
+				D1688F301945C654007973C6 /* InfoPlist.strings */,
+				D1688F331945C654007973C6 /* main.m */,
+				D1688F351945C654007973C6 /* PompaDroid-Prefix.pch */,
+				D14FD42919474065005900AB /* Defines.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1688F541945C654007973C6 /* PompaDroidTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1688F5A1945C654007973C6 /* PompaDroidTests.m */,
+				D1688F551945C654007973C6 /* Supporting Files */,
+			);
+			path = PompaDroidTests;
+			sourceTree = "<group>";
+		};
+		D1688F551945C654007973C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1688F561945C654007973C6 /* PompaDroidTests-Info.plist */,
+				D1688F571945C654007973C6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D16B91DB1947259200280537 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D19F64251948B41E00D7A950 /* Sounds */,
+				D1FA2B9A19487C4E00C0C103 /* Levels.plist */,
+				D1FA2B8A1948755E00C0C103 /* Fonts */,
+				D16B91DC194725A900280537 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D16B91DC194725A900280537 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D16B91DD194725A900280537 /* bg_title.png */,
+				D16B91DE194725A900280537 /* joypad.atlas */,
+				D16B91DF194725A900280537 /* map_level1.tmx */,
+				D16B91E0194725A900280537 /* sprites.atlasc */,
+				D16B91E3194725A900280537 /* tiles.png */,
+				D16B91E4194725A900280537 /* txt_title.png */,
+				D16B91E5194725A900280537 /* txt_touchtostart.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D16B91E0194725A900280537 /* sprites.atlasc */ = {
+			isa = PBXGroup;
+			children = (
+				D16B91E1194725A900280537 /* sprites.plist */,
+				D16B91E2194725A900280537 /* sprites.png */,
+			);
+			path = sprites.atlasc;
+			sourceTree = "<group>";
+		};
+		D16B91EE19472AE100280537 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				D16B91EF19472AFC00280537 /* TitleScene.h */,
+				D16B91F019472AFC00280537 /* TitleScene.m */,
+				D1FA2B87194871D500C0C103 /* LoadingScene.h */,
+				D1FA2B88194871D500C0C103 /* LoadingScene.m */,
+			);
+			name = Menus;
+			sourceTree = "<group>";
+		};
+		D17B04C119484164004BB702 /* JSTileMap */ = {
+			isa = PBXGroup;
+			children = (
+				D17B04C219484164004BB702 /* JSTileMap.h */,
+				D17B04C319484164004BB702 /* JSTileMap.m */,
+				D17B04C419484164004BB702 /* LFCGzipUtility.h */,
+				D17B04C519484164004BB702 /* LFCGzipUtility.m */,
+				D17B04C619484164004BB702 /* LICENSE.txt */,
+			);
+			path = JSTileMap;
+			sourceTree = "<group>";
+		};
+		D17B04CC19484314004BB702 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				D17B04CD19484321004BB702 /* ActionSprite.h */,
+				D17B04CE19484321004BB702 /* ActionSprite.m */,
+				D17B04D019484389004BB702 /* Hero.h */,
+				D17B04D119484389004BB702 /* Hero.m */,
+				D17B04DA19485893004BB702 /* Robot.h */,
+				D17B04DB19485893004BB702 /* Robot.m */,
+				D1FA2B9719487BE400C0C103 /* Boss.h */,
+				D1FA2B9819487BE400C0C103 /* Boss.m */,
+			);
+			name = Characters;
+			sourceTree = "<group>";
+		};
+		D17B04D319484433004BB702 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				D17B04D419484440004BB702 /* ActionDPad.h */,
+				D17B04D519484440004BB702 /* ActionDPad.m */,
+				D17B04D719485328004BB702 /* ActionButton.h */,
+				D17B04D819485328004BB702 /* ActionButton.m */,
+				D17B04DD194858C7004BB702 /* AnimationMember.h */,
+				D17B04DE194858C7004BB702 /* AnimationMember.m */,
+				D1FA2B8D1948777F00C0C103 /* UIColor+BGSK.h */,
+				D1FA2B8E1948777F00C0C103 /* UIColor+BGSK.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		D17D1A9F19489AB7007BF819 /* Weapons */ = {
+			isa = PBXGroup;
+			children = (
+				D17D1AA019489AC1007BF819 /* Weapon.h */,
+				D17D1AA119489AC1007BF819 /* Weapon.m */,
+				D17D1AA319489B44007BF819 /* Gauntlets.h */,
+				D17D1AA419489B44007BF819 /* Gauntlets.m */,
+			);
+			name = Weapons;
+			sourceTree = "<group>";
+		};
+		D17D1AA61948A029007BF819 /* MapObjects */ = {
+			isa = PBXGroup;
+			children = (
+				D17D1AA71948A03A007BF819 /* MapObject.h */,
+				D17D1AA81948A03A007BF819 /* MapObject.m */,
+				D17D1AAA1948A05F007BF819 /* TrashCan.h */,
+				D17D1AAB1948A05F007BF819 /* TrashCan.m */,
+			);
+			name = MapObjects;
+			sourceTree = "<group>";
+		};
+		D19F64251948B41E00D7A950 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D19F64261948B41E00D7A950 /* blip.caf */,
+				D19F64271948B41E00D7A950 /* enemydeath.caf */,
+				D19F64281948B41E00D7A950 /* herodeath.caf */,
+				D19F64291948B41E00D7A950 /* hit0.caf */,
+				D19F642A1948B41E00D7A950 /* hit1.caf */,
+				D19F642B1948B41E00D7A950 /* latin_industries.aifc */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		D1FA2B7E1948676500C0C103 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				D1FA2B7F1948677100C0C103 /* WeightedDecision.h */,
+				D1FA2B801948677100C0C103 /* WeightedDecision.m */,
+				D1FA2B821948679200C0C103 /* ArtificialIntelligence.h */,
+				D1FA2B831948679200C0C103 /* ArtificialIntelligence.m */,
+			);
+			name = AI;
+			sourceTree = "<group>";
+		};
+		D1FA2B8A1948755E00C0C103 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D1FA2B8B1948755E00C0C103 /* 04b03.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D1FA2B901948796500C0C103 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				D1FA2B911948797A00C0C103 /* DamageNumber.h */,
+				D1FA2B921948797A00C0C103 /* DamageNumber.m */,
+				D1FA2B9419487A8A00C0C103 /* HitEffect.h */,
+				D1FA2B9519487A8A00C0C103 /* HitEffect.m */,
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1688F211945C653007973C6 /* PompaDroid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1688F5E1945C654007973C6 /* Build configuration list for PBXNativeTarget "PompaDroid" */;
+			buildPhases = (
+				D1688F1E1945C653007973C6 /* Sources */,
+				D1688F1F1945C653007973C6 /* Frameworks */,
+				D1688F201945C653007973C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PompaDroid;
+			productName = PompaDroid;
+			productReference = D1688F221945C653007973C6 /* PompaDroid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1688F4C1945C654007973C6 /* PompaDroidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1688F611945C654007973C6 /* Build configuration list for PBXNativeTarget "PompaDroidTests" */;
+			buildPhases = (
+				D1688F491945C654007973C6 /* Sources */,
+				D1688F4A1945C654007973C6 /* Frameworks */,
+				D1688F4B1945C654007973C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1688F531945C654007973C6 /* PBXTargetDependency */,
+			);
+			name = PompaDroidTests;
+			productName = PompaDroidTests;
+			productReference = D1688F4D1945C654007973C6 /* PompaDroidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1688F1A1945C653007973C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					D1688F4C1945C654007973C6 = {
+						TestTargetID = D1688F211945C653007973C6;
+					};
+				};
+			};
+			buildConfigurationList = D1688F1D1945C653007973C6 /* Build configuration list for PBXProject "PompaDroid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1688F191945C653007973C6;
+			productRefGroup = D1688F231945C653007973C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1688F211945C653007973C6 /* PompaDroid */,
+				D1688F4C1945C654007973C6 /* PompaDroidTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1688F201945C653007973C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16B91EC194725A900280537 /* txt_title.png in Resources */,
+				D16B91E7194725A900280537 /* joypad.atlas in Resources */,
+				D16B91EB194725A900280537 /* tiles.png in Resources */,
+				D19F642E1948B41E00D7A950 /* herodeath.caf in Resources */,
+				D16B91EA194725A900280537 /* sprites.png in Resources */,
+				D16B91E9194725A900280537 /* sprites.plist in Resources */,
+				D17B04C919484164004BB702 /* LICENSE.txt in Resources */,
+				D1688F481945C654007973C6 /* Images.xcassets in Resources */,
+				D19F642C1948B41E00D7A950 /* blip.caf in Resources */,
+				D19F642F1948B41E00D7A950 /* hit0.caf in Resources */,
+				D16B91ED194725A900280537 /* txt_touchtostart.png in Resources */,
+				D16B91E8194725A900280537 /* map_level1.tmx in Resources */,
+				D19F642D1948B41E00D7A950 /* enemydeath.caf in Resources */,
+				D1FA2B8C1948755E00C0C103 /* 04b03.ttf in Resources */,
+				D1688F3E1945C654007973C6 /* Main_iPad.storyboard in Resources */,
+				D1FA2B9B19487C4E00C0C103 /* Levels.plist in Resources */,
+				D1688F3B1945C654007973C6 /* Main_iPhone.storyboard in Resources */,
+				D19F64311948B41E00D7A950 /* latin_industries.aifc in Resources */,
+				D1688F321945C654007973C6 /* InfoPlist.strings in Resources */,
+				D19F64301948B41E00D7A950 /* hit1.caf in Resources */,
+				D16B91E6194725A900280537 /* bg_title.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1688F4B1945C654007973C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1688F591945C654007973C6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1688F1E1945C653007973C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1FA2B931948797A00C0C103 /* DamageNumber.m in Sources */,
+				D1688F411945C654007973C6 /* ViewController.m in Sources */,
+				D17B04C819484164004BB702 /* LFCGzipUtility.m in Sources */,
+				D17D1AAC1948A05F007BF819 /* TrashCan.m in Sources */,
+				D14FD430194746DF005900AB /* GameLayer.m in Sources */,
+				D1FA2B89194871D500C0C103 /* LoadingScene.m in Sources */,
+				D14FD45819475040005900AB /* SKEmitterNode+SKTExtras.m in Sources */,
+				D17B04DC19485893004BB702 /* Robot.m in Sources */,
+				D17B04D619484440004BB702 /* ActionDPad.m in Sources */,
+				D1FA2B841948679200C0C103 /* ArtificialIntelligence.m in Sources */,
+				D17B04C719484164004BB702 /* JSTileMap.m in Sources */,
+				D1688F381945C654007973C6 /* AppDelegate.m in Sources */,
+				D17D1AA519489B44007BF819 /* Gauntlets.m in Sources */,
+				D14FD43619474BAE005900AB /* HudLayer.m in Sources */,
+				D17B04DF194858C7004BB702 /* AnimationMember.m in Sources */,
+				D14FD45C19475040005900AB /* SKTUtils.mm in Sources */,
+				D1FA2B811948677100C0C103 /* WeightedDecision.m in Sources */,
+				D1FA2B9919487BE400C0C103 /* Boss.m in Sources */,
+				D14FD42D194746D0005900AB /* GameScene.m in Sources */,
+				D1FA2B9619487A8A00C0C103 /* HitEffect.m in Sources */,
+				D1688F341945C654007973C6 /* main.m in Sources */,
+				D14FD45A19475040005900AB /* SKTAudio.m in Sources */,
+				D16B91F119472AFC00280537 /* TitleScene.m in Sources */,
+				D17B04D919485328004BB702 /* ActionButton.m in Sources */,
+				D14FD45719475040005900AB /* SKAction+SKTExtras.m in Sources */,
+				D1FA2B7D1948631C00C0C103 /* DebugLayer.m in Sources */,
+				D14FD45919475040005900AB /* SKNode+SKTExtras.m in Sources */,
+				D1FA2B8F1948777F00C0C103 /* UIColor+BGSK.m in Sources */,
+				D17D1AA91948A03A007BF819 /* MapObject.m in Sources */,
+				D17B04CF19484321004BB702 /* ActionSprite.m in Sources */,
+				D17D1AA219489AC1007BF819 /* Weapon.m in Sources */,
+				D14FD45B19475040005900AB /* SKTTextureCache.m in Sources */,
+				D17B04D219484389004BB702 /* Hero.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1688F491945C654007973C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1688F5B1945C654007973C6 /* PompaDroidTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1688F531945C654007973C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1688F211945C653007973C6 /* PompaDroid */;
+			targetProxy = D1688F521945C654007973C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1688F301945C654007973C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1688F311945C654007973C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D1688F391945C654007973C6 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1688F3A1945C654007973C6 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D1688F3C1945C654007973C6 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1688F3D1945C654007973C6 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D1688F571945C654007973C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1688F581945C654007973C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1688F5C1945C654007973C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1688F5D1945C654007973C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1688F5F1945C654007973C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PompaDroid/PompaDroid-Prefix.pch";
+				INFOPLIST_FILE = "PompaDroid/PompaDroid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D1688F601945C654007973C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PompaDroid/PompaDroid-Prefix.pch";
+				INFOPLIST_FILE = "PompaDroid/PompaDroid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D1688F621945C654007973C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PompaDroid.app/PompaDroid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PompaDroid/PompaDroid-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PompaDroidTests/PompaDroidTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D1688F631945C654007973C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PompaDroid.app/PompaDroid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PompaDroid/PompaDroid-Prefix.pch";
+				INFOPLIST_FILE = "PompaDroidTests/PompaDroidTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1688F1D1945C653007973C6 /* Build configuration list for PBXProject "PompaDroid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1688F5C1945C654007973C6 /* Debug */,
+				D1688F5D1945C654007973C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1688F5E1945C654007973C6 /* Build configuration list for PBXNativeTarget "PompaDroid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1688F5F1945C654007973C6 /* Debug */,
+				D1688F601945C654007973C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1688F611945C654007973C6 /* Build configuration list for PBXNativeTarget "PompaDroidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1688F621945C654007973C6 /* Debug */,
+				D1688F631945C654007973C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1688F1A1945C653007973C6 /* Project object */;
+}
