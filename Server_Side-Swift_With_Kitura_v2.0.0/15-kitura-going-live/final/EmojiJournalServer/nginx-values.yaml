@@ -1,0 +1,10 @@
+controller:
+  service:
+    externalTrafficPolicy: Local
+    type: LoadBalancer
+    selector:
+      app.kubernetes.io/name: ingress-nginx
+      app.kubernetes.io/part-of: ingress-nginx
+    targetPorts:
+      http: http
+      https: https

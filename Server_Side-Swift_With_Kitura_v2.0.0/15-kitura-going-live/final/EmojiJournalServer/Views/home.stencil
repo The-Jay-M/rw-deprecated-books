@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EmojiJournal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="./css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;amp;subset=latin,latin-ext">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <div class='menu-container'>
+    <div id="user-info-popup" style="align-self: auto;">
+      <input id="username-field" placeholder="username">
+      <br>
+      <input id="password-field" type="password" placeholder="password">
+      <br>
+      <button id="cancel-signup-button" onclick="cancelButtonTapped()">Cancel</button>
+      <button id="signup-button" onclick="createUser()">Sign Up</button>
+      <button id="login-button" onclick="login()">Login</button>
+      <button id="logout-button" onClick="logout()">Logout</button>
+    </div>
+    <div class="wrapper" style="display: grid;grid-template-columns: 1fr 1fr 1fr;">
+      <div id="logged-in" style="display:flex;margin:0;align-items:center;color:white;">
+    </div>
+    <div class='title'>
+      <h1>😎 EmojiJournal 😎</h1>
+    </div>
+    <div class="wrapper" style="display: flex;align-items: center;margin: 0;">
+      <div class="title-login" onclick="signupClicked()" style="margin-left: auto;color: white;">User Management</div>
+    </div>
+  </div>
+  </div>
+  <div class="wrapper">
+    <main class="cards">
+      <article class="card">
+        <div class="add-new-card">
+          <input id="add-new-emoji-field" type="emoji-field" class="emoji-text-field" placeholder="How you feelin'?" data-emojiable="true" maxlength=1>
+          <div class="add-new-button">
+            <input type="image" class="add-new-image" src="./img/plusSign.jpg" alt="Add New Entry" type="submit" onClick="addEmoji()"/>
+          </div>
+        </div>
+      </article>
+      {% for entry in entries %}
+      <article class="card"
+        style="background-color: #{{ entry.backgroundColorCode }};">
+        <div class="top-content-box">
+          <div class="emoji-date">
+            <p>{{ entry.displayDate }}<br>{{ entry.displayTime }}</p>
+          </div>
+          <input id={{ entry.id }} class="delete-button" type="submit"
+            value="&#10005;" onClick="deleteEntry(this.id)"
+            onEntry="hideEmojiPicker()">
+        </div>
+        <p class="emoji-text">{{ entry.emoji }}</p>
+      </article>
+      {% endfor %}
+    </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="/js/config.js"></script>
+  <script src="/js/util.js"></script>
+  <script src="/js/jquery.emojiarea.js"></script>
+  <script src="/js/emoji-picker.js"></script>
+  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+  <script>
+    $(document).ready(() => {
+      $('#user-info-popup').popup({
+        color: '#FFF',
+        opacity: 0.9
+      })
+    })
+    
+    $(function() {
+      window.emojiPicker = new EmojiPicker({emojiable_selector: '[data-emojiable=true]', assetsPath: '/img/', popupButtonClasses: 'fa fa-smile-o'});
+      window.emojiPicker.discover();
+      var loggedInUser = document.getElementById('logged-in')
+      loggedInUser.innerHTML = "Logged in as: " + getCookie("username")
+    });
+    
+    function signupClicked() {
+      $('#username-field').val(getCookie("username"))
+      $('#password-field').val(getCookie("password"))
+      $('#user-info-popup').popup('show')
+    }
+  
+    function cancelButtonTapped() {
+      $('#user-info-popup').popup('hide')
+    }
+  
+    function setCookie(cookiename, cookievalue, hours) {
+      var date = new Date();
+      date.setTime(date.getTime() + Number(hours) * 3600 * 1000);
+      document.cookie = cookiename + "=" + cookievalue +
+      "; path=/;expires = " + date.toGMTString();
+    }
+  
+    function getCookie(name) {
+      var value = "; " + document.cookie;
+      var parts = value.split("; " + name + "=");
+      if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+  
+    function createUser() {
+      var userID = $('#username-field').val()
+      var password = $('#password-field').val()
+      var xhr = new XMLHttpRequest()
+      xhr.open("POST", "/user")
+      xhr.setRequestHeader("Content-Type", "application/json")
+      xhr.onreadystatechange = (() => {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+          $('#new-user-popup').popup('hide')
+          if (xhr.status == 201) {
+            var result = confirm(`Created a new user: ${userID} - want to login?`)
+            if (result) {
+              login()
+            }
+          } else {
+            alert(`There was an error creating this user profile: ${xhr.statusText}`)
+          }
+        }
+      })
+      var body = JSON.stringify({"id": userID, "password": password})
+      xhr.send(body)
+    }
+  
+    function login() {
+      var userID = $('#username-field').val()
+      var password = $('#password-field').val()
+      var xhr = new XMLHttpRequest()
+      xhr.open("GET", "/entries")
+      xhr.setRequestHeader("Content-Type", "application/json")
+      xhr.setRequestHeader("Authorization", "Basic " + btoa(userID + ":" + password))
+      xhr.onreadystatechange = (() => {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+          if (xhr.status == 200) {
+            setCookie("username", userID, 24)
+            setCookie("password", password, 24)
+            $('#user-info-popup').popup('hide')
+            alert(`Logged in as ${userID}`)
+            var loggedInUser = document.getElementById('logged-in')
+            loggedInUser.innerHTML = "Logged in as: " + userID
+            location.reload()
+          } else {
+            alert(`Login failed: ${xhr.statusText}`)
+          }
+        }
+      })
+      xhr.send()
+    }
+  
+    function logout() {
+      if (confirm("Are you sure you want to log out?")) {
+        setCookie("username", "", 24)
+        setCookie("password", "", 24)
+        location.reload()
+      }
+    }
+  
+    function addEmoji() {
+      var date = new Date();
+      var dateString = date.toISOString();
+      var emoji = $("#add-new-emoji-field").val()
+      if (emoji == "") {
+        alert("You must enter an emoji!");
+        return;
+      }
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "/entries");
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.setRequestHeader("Authorization", "Basic " + btoa(getCookie("username") + ":" + getCookie("password")))
+      xhr.onreadystatechange = (() => {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+          if (xhr.status == 201) {
+            location.reload();
+          } else {
+            alert(`There was an error adding this emoji: ${xhr.statusText}`)
+          }
+        }
+      })
+      var body = JSON.stringify({ "emoji": emoji, "date": dateString });
+      xhr.send(body);
+    }
+  
+    function deleteEntry(entryID) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("DELETE", "/entries/" + entryID);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.setRequestHeader("Authorization", "Basic " + btoa(getCookie("username") + ":" + getCookie("password")))
+      xhr.onreadystatechange = (() => {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+          location.reload();
+        }
+      })
+      xhr.send();
+    }
+  
+    </script>
+</html>
+
+<script type="text/javascript">
+  function hideEmojiPicker() {
+    alert("should hide picker now");
+  }
+</script>
+
+

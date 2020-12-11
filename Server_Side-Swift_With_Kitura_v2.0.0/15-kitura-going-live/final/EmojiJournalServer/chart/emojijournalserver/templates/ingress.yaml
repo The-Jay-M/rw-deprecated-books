@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: emojiserver-ingress 
+spec:
+  tls:
+    - hosts:
+      - emojijournal.com
+      secretName: emojiserver-tls
+  rules:
+    - host: emojijournal.com
+      http:
+        paths:
+        - path: /
+          backend:
+            serviceName: emojijournalserver-application-service 
+            servicePort: 8080

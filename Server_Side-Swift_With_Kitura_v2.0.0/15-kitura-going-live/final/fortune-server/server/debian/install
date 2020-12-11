@@ -1,0 +1,3 @@
+.build/							usr/src/server
+terraform/scripts/install.sh	usr/src/server
+terraform/scripts/start.sh		usr/src/server
