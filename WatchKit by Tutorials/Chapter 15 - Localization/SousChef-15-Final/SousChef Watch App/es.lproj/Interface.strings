@@ -1,0 +1,111 @@
+
+/* Class = "WKInterfaceLabel"; text = "Groceries"; ObjectID = "1BF-hp-0LB"; */
+"1BF-hp-0LB.text" = "Groceries";
+
+/* Class = "WKInterfaceLabel"; text = "Recipes"; ObjectID = "1IX-4O-n0W"; */
+"1IX-4O-n0W.text" = "Recipes";
+
+/* Class = "WKInterfaceLabel"; text = "<message>"; ObjectID = "1Tx-xa-qMD"; */
+"1Tx-xa-qMD.text" = "<message>";
+
+/* Class = "WKInterfaceLabel"; text = "Recipe Name"; ObjectID = "5sV-AM-S5v"; */
+"5sV-AM-S5v.text" = "Recipe Name";
+
+/* Class = "WKInterfaceMenuItem"; title = "Cancel"; ObjectID = "6T9-JW-dsC"; */
+"6T9-JW-dsC.title" = "Cancel";
+
+/* Class = "WKInterfaceLabel"; text = "Directions"; ObjectID = "6n8-bI-XTf"; */
+"6n8-bI-XTf.text" = "Directions";
+
+/* Class = "WKInterfaceLabel"; text = "Bread"; ObjectID = "7JV-F4-kFu"; */
+"7JV-F4-kFu.text" = "Bread";
+
+/* Class = "WKInterfaceLabel"; text = "Label"; ObjectID = "9cB-Tg-ogF"; */
+"9cB-Tg-ogF.text" = "Label";
+
+/* Class = "WKInterfaceController"; title = "Recipes"; ObjectID = "BWw-bR-ekA"; */
+"BWw-bR-ekA.title" = "Recipes";
+
+/* Class = "WKInterfaceMenuItem"; title = "Add to List"; ObjectID = "Bkj-dc-c1w"; */
+"Bkj-dc-c1w.title" = "Add to List";
+
+/* Class = "WKInterfaceController"; title = "Directions"; ObjectID = "CDS-Yr-cZl"; */
+"CDS-Yr-cZl.title" = "Directions";
+
+/* Class = "WKInterfaceMenuItem"; title = "Clear All"; ObjectID = "CK7-eE-Jjn"; */
+"CK7-eE-Jjn.title" = "Clear All";
+
+/* Class = "WKInterfaceController"; title = "Groceries"; ObjectID = "IFD-E8-9sZ"; */
+"IFD-E8-9sZ.title" = "Groceries";
+
+/* Class = "WKInterfaceLabel"; text = "Groceries"; ObjectID = "LFR-3Z-Ta1"; */
+"LFR-3Z-Ta1.text" = "Groceries";
+
+/* Class = "WKInterfaceLabel"; text = "Ingredient"; ObjectID = "MAu-cN-brA"; */
+"MAu-cN-brA.text" = "Ingredient";
+
+/* Class = "WKInterfaceLabel"; text = "Label"; ObjectID = "MaP-X2-Bkc"; */
+"MaP-X2-Bkc.text" = "Label";
+
+/* Class = "WKInterfaceController"; title = "Ingredients"; ObjectID = "My8-qM-YdQ"; */
+"My8-qM-YdQ.title" = "Ingredients";
+
+/* Class = "WKInterfaceMenuItem"; title = "Cancel"; ObjectID = "N0O-bB-b5o"; */
+"N0O-bB-b5o.title" = "Cancel";
+
+/* Class = "WKInterfaceLabel"; text = "2 tbsp"; ObjectID = "NJs-Mf-t4f"; */
+"NJs-Mf-t4f.text" = "2 tbsp";
+
+/* Class = "WKInterfaceLabel"; text = "Alert Label"; ObjectID = "Owd-Ui-jsm"; */
+"Owd-Ui-jsm.text" = "Alert Label";
+
+/* Class = "WKInterfaceButton"; title = "Start"; ObjectID = "Pet-Wy-Sum"; */
+"Pet-Wy-Sum.title" = "Start";
+
+/* Class = "WKInterfaceLabel"; text = "1 tsp"; ObjectID = "UIH-cZ-ohV"; */
+"UIH-cZ-ohV.text" = "1 tsp";
+
+/* Class = "WKInterfaceLabel"; text = "x3"; ObjectID = "VbJ-Ra-Sos"; */
+"VbJ-Ra-Sos.text" = "x3";
+
+/* Class = "WKInterfaceLabel"; text = "3/7"; ObjectID = "ea4-wE-yZA"; */
+"ea4-wE-yZA.text" = "3/7";
+
+/* Class = "WKInterfaceLabel"; text = "Fresh Pepper"; ObjectID = "kU9-yW-x6V"; */
+"kU9-yW-x6V.text" = "Fresh Pepper";
+
+/* Class = "WKInterfaceLabel"; text = "<report>"; ObjectID = "kkS-gY-smI"; */
+"kkS-gY-smI.text" = "<report>";
+
+/* Class = "WKInterfaceLabel"; text = "Step description"; ObjectID = "nQa-cp-Py5"; */
+"nQa-cp-Py5.text" = "Step description";
+
+/* Class = "WKInterfaceLabel"; text = "Ingredients"; ObjectID = "tho-dn-hu0"; */
+"tho-dn-hu0.text" = "Ingredients";
+
+/* Class = "WKInterfaceLabel"; text = "Step 1"; ObjectID = "toe-ye-WGb"; */
+"toe-ye-WGb.text" = "Step 1";
+
+/* Class = "WKInterfaceLabel"; text = "Type"; ObjectID = "u60-tw-R4y"; */
+"u60-tw-R4y.text" = "Type";
+
+/* Class = "WKInterfaceLabel"; text = "Recipes"; ObjectID = "uDr-dt-n7I"; */
+"uDr-dt-n7I.text" = "Recipes";
+
+/* Class = "WKInterfaceMenuItem"; title = "Purchased"; ObjectID = "v0L-MX-fwd"; */
+"v0L-MX-fwd.title" = "Purchased";
+
+/* Class = "WKInterfaceLabel"; text = "<message>"; ObjectID = "wXc-wU-de2"; */
+"wXc-wU-de2.text" = "<message>";
+
+/* Class = "WKInterfaceButton"; title = "Cancel"; ObjectID = "wao-2R-51e"; */
+"wao-2R-51e.title" = "Cancel";
+
+/* Class = "WKInterfaceLabel"; text = "Milk"; ObjectID = "wj7-Pd-zZJ"; */
+"wj7-Pd-zZJ.text" = "Milk";
+
+/* Class = "WKInterfaceLabel"; text = "<greeting>"; ObjectID = "xqY-XD-W4a"; */
+"xqY-XD-W4a.text" = "<greeting>";
+
+/* Class = "WKInterfaceLabel"; text = "<title>"; ObjectID = "zvk-pH-QaB"; */
+"zvk-pH-QaB.text" = "<title>";

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Initial Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller spacing="20" id="AgC-eL-Hgc" customClass="InitialInterfaceController" customModule="SousChef_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" spacing="5" id="6qF-zz-w2R">
+                            <items>
+                                <imageView alignment="center" verticalAlignment="center" image="rw-circle" id="QIJ-jl-Dp8"/>
+                                <label alignment="center" verticalAlignment="center" text="SousChef" id="1IX-4O-n0W"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" spacing="15" id="CBL-Ng-4CP">
+                            <items>
+                                <button alignment="center" id="ued-nl-h7G">
+                                    <group key="contentGroup" alignment="left" layout="vertical" id="95D-vl-4pR">
+                                        <items>
+                                            <imageView alignment="center" image="bookmark-button" id="210-oa-D8B"/>
+                                            <label alignment="center" text="Recipes" id="uDr-dt-n7I">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <segue destination="BWw-bR-ekA" kind="push" id="ZGw-4P-gxw"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" id="vWz-wV-II9">
+                                    <group key="contentGroup" alignment="left" layout="vertical" id="cDV-Ys-nF7">
+                                        <items>
+                                            <imageView alignment="center" image="ingredients" id="HMG-ty-Hke"/>
+                                            <label alignment="center" text="Groceries" id="1BF-hp-0LB">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <segue destination="IFD-E8-9sZ" kind="push" id="Rmg-id-b5k"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="15" bottom="0.0"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Recipes-->
+        <scene sceneID="rJf-Us-86B">
+            <objects>
+                <controller title="Recipes" id="BWw-bR-ekA" customClass="RecipesInterfaceController" customModule="SousChef_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="bUI-sU-t2G">
+                            <items>
+                                <tableRow identifier="RecipeRowType" id="k7i-gj-dFK" customClass="RecipeRowController" customModule="SousChef_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="1iF-5p-JYs">
+                                        <items>
+                                            <label alignment="left" text="Label" id="9cB-Tg-ogF"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="b0K-ud-FKx" kind="push" id="QXz-YQ-1kQ"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="9cB-Tg-ogF" id="aLc-u9-mnK"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="bUI-sU-t2G" id="kOF-P3-ENN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="455" y="223"/>
+        </scene>
+        <!--Recipe Detail Interface Controller-->
+        <scene sceneID="F9a-el-BVP">
+            <objects>
+                <controller id="b0K-ud-FKx" customClass="RecipeDetailInterfaceController" customModule="SousChef_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="5sV-AM-S5v"/>
+                        <group width="1" alignment="left" spacing="15" id="uwQ-EZ-EBQ">
+                            <items>
+                                <button alignment="center" id="MQU-xD-hdo">
+                                    <group key="contentGroup" alignment="left" layout="vertical" id="HYf-4C-RRc">
+                                        <items>
+                                            <imageView alignment="center" image="ingredients" id="vlH-ur-vAW"/>
+                                            <label alignment="center" text="Ingredients" id="tho-dn-hu0">
+                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <segue destination="My8-qM-YdQ" kind="push" id="xrE-kl-VMg"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" id="KYy-CN-7qj">
+                                    <group key="contentGroup" alignment="left" layout="vertical" id="tNd-8M-Zx5">
+                                        <items>
+                                            <imageView alignment="center" image="directions" id="mqt-Nb-tTT"/>
+                                            <label alignment="center" text="Directions" id="6n8-bI-XTf">
+                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <segue destination="CDS-Yr-cZl" kind="push" id="q1q-My-bHw"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="nameLabel" destination="5sV-AM-S5v" id="PyZ-yS-KqL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="647" y="221"/>
+        </scene>
+        <!--Ingredients-->
+        <scene sceneID="obA-Rr-Nc2">
+            <objects>
+                <controller title="Ingredients" id="My8-qM-YdQ"/>
+            </objects>
+            <point key="canvasLocation" x="848" y="318"/>
+        </scene>
+        <!--Directions-->
+        <scene sceneID="t0a-HS-Xdr">
+            <objects>
+                <controller title="Directions" id="CDS-Yr-cZl"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="77"/>
+        </scene>
+        <!--Groceries-->
+        <scene sceneID="Caa-rk-oSX">
+            <objects>
+                <controller title="Groceries" id="IFD-E8-9sZ"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="478"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.10588235294117647" green="0.60784313725490191" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+</document>

@@ -1,0 +1,57 @@
+
+/* Class = "UITableViewController"; title = "Recipe Steps"; ObjectID = "1VN-nX-Nnf"; */
+"1VN-nX-Nnf.title" = "Recipe Steps";
+
+/* Class = "UITableViewController"; title = "Recipe Ingredients"; ObjectID = "4z3-YF-K82"; */
+"4z3-YF-K82.title" = "Recipe Ingredients";
+
+/* Class = "UINavigationItem"; title = "Groceries"; ObjectID = "9yC-mI-mWn"; */
+"9yC-mI-mWn.title" = "Groceries";
+
+/* Class = "UILabel"; text = "Recipes"; ObjectID = "D51-3r-cgF"; */
+"D51-3r-cgF.text" = "Recipes";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "KXe-E8-IZx"; */
+"KXe-E8-IZx.text" = "Title";
+
+/* Class = "UITabBarItem"; title = "Recipes"; ObjectID = "KkT-Dh-Ov5"; */
+"KkT-Dh-Ov5.title" = "Recipes";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LEN-U4-88q"; */
+"LEN-U4-88q.text" = "Label";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "WdF-t2-i2j"; */
+"WdF-t2-i2j.text" = "Detail";
+
+/* Class = "UINavigationController"; title = "Recipes"; ObjectID = "Yj9-ig-1kD"; */
+"Yj9-ig-1kD.title" = "Recipes";
+
+/* Class = "UINavigationController"; title = "Groceries"; ObjectID = "aEn-yx-gXY"; */
+"aEn-yx-gXY.title" = "Groceries";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "fYM-UT-0hk"; */
+"fYM-UT-0hk.text" = "Title";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "kTC-DE-CmT"; */
+"kTC-DE-CmT.title" = " ";
+
+/* Class = "UISegmentedControl"; oqx-y2-N2H.segmentTitles[0] = "Ingredients"; ObjectID = "oqx-y2-N2H"; */
+"oqx-y2-N2H.segmentTitles[0]" = "Ingredients";
+
+/* Class = "UISegmentedControl"; oqx-y2-N2H.segmentTitles[1] = "Directions"; ObjectID = "oqx-y2-N2H"; */
+"oqx-y2-N2H.segmentTitles[1]" = "Directions";
+
+/* Class = "UITabBarItem"; title = "Groceries"; ObjectID = "qmg-q5-BqJ"; */
+"qmg-q5-BqJ.title" = "Groceries";
+
+/* Class = "UITableViewController"; title = "Groceries"; ObjectID = "sZe-bz-w7J"; */
+"sZe-bz-w7J.title" = "Groceries";
+
+/* Class = "UITableViewController"; title = "Recipes"; ObjectID = "x6f-hW-G7t"; */
+"x6f-hW-G7t.title" = "Recipes";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "yle-Er-lw0"; */
+"yle-Er-lw0.text" = "Title";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zrn-QY-WtQ"; */
+"zrn-QY-WtQ.text" = "Label";
