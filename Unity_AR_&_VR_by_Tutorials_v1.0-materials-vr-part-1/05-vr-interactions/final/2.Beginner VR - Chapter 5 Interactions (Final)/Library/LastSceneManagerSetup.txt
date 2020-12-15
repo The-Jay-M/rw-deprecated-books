@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Razeware/Scenes/Chapter 5 - VR Interactions.unity
+  isLoaded: 1
+  isActive: 1

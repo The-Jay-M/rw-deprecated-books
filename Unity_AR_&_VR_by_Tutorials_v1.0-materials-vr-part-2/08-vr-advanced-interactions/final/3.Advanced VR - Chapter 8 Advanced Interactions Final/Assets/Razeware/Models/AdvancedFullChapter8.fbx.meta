@@ -1,0 +1,206 @@
+fileFormatVersion: 2
+guid: 90ba2a217946dd0499c8a8f21ee975b0
+timeCreated: 1514648218
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BatteryHighlight
+    100004: CenterStage
+    100006: Doors
+    100008: ObjectExhibit
+    100010: OuterWalls
+    100012: Painting 1
+    100014: Painting 2
+    100016: Painting 3
+    100018: Painting 4
+    100020: Painting Info
+    100022: Plaque
+    100024: Stages
+    100026: Awesome Text
+    100028: RayRoy Text
+    100030: Painting 5
+    100032: Painting 5.001
+    100034: Painting 6
+    100036: Painting 7
+    100038: Painting 7.001
+    400000: //RootNode
+    400002: BatteryHighlight
+    400004: CenterStage
+    400006: Doors
+    400008: ObjectExhibit
+    400010: OuterWalls
+    400012: Painting 1
+    400014: Painting 2
+    400016: Painting 3
+    400018: Painting 4
+    400020: Painting Info
+    400022: Plaque
+    400024: Stages
+    400026: Awesome Text
+    400028: RayRoy Text
+    400030: Painting 5
+    400032: Painting 5.001
+    400034: Painting 6
+    400036: Painting 7
+    400038: Painting 7.001
+    2100000: Shared
+    2100002: Paintings
+    2100004: Black
+    2300000: BatteryHighlight
+    2300002: CenterStage
+    2300004: Doors
+    2300006: ObjectExhibit
+    2300008: OuterWalls
+    2300010: Painting 1
+    2300012: Painting 2
+    2300014: Painting 3
+    2300016: Painting 4
+    2300018: Painting Info
+    2300020: Plaque
+    2300022: Stages
+    2300024: Awesome Text
+    2300026: RayRoy Text
+    2300028: Painting 5
+    2300030: Painting 5.001
+    2300032: Painting 6
+    2300034: Painting 7
+    2300036: Painting 7.001
+    3300000: BatteryHighlight
+    3300002: CenterStage
+    3300004: Doors
+    3300006: ObjectExhibit
+    3300008: OuterWalls
+    3300010: Painting 1
+    3300012: Painting 2
+    3300014: Painting 3
+    3300016: Painting 4
+    3300018: Painting Info
+    3300020: Plaque
+    3300022: Stages
+    3300024: Awesome Text
+    3300026: RayRoy Text
+    3300028: Painting 5
+    3300030: Painting 5.001
+    3300032: Painting 6
+    3300034: Painting 7
+    3300036: Painting 7.001
+    4300000: BatteryHighlight
+    4300002: Painting 4
+    4300004: Painting 3
+    4300006: Painting 2
+    4300008: CenterStage
+    4300010: Painting Info
+    4300012: Painting 1
+    4300014: Doors
+    4300016: ObjectExhibit
+    4300018: Plaque
+    4300020: Stages
+    4300022: OuterWalls
+    4300024: RayRoy Text
+    4300026: Awesome Text
+    4300028: Painting 5.001
+    4300030: Painting 5
+    4300032: Painting 7.001
+    4300034: Painting 7
+    4300036: Painting 6
+    6400000: Awesome Text
+    6400002: BatteryHighlight
+    6400004: CenterStage
+    6400006: Doors
+    6400008: ObjectExhibit
+    6400010: OuterWalls
+    6400012: Painting 1
+    6400014: Painting 2
+    6400016: Painting 3
+    6400018: Painting 4
+    6400020: Painting Info
+    6400022: Plaque
+    6400024: RayRoy Text
+    6400026: Stages
+    6400028: Painting 5
+    6400030: Painting 5.001
+    6400032: Painting 6
+    6400034: Painting 7
+    6400036: Painting 7.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

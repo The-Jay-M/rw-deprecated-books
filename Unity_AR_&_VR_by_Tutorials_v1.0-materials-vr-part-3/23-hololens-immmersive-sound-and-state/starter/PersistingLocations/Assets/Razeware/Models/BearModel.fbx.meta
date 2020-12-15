@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: ad892a31b7ba18f4fba1b95fa3574436
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: Chest
+    100006: CuteCharacter
+    100008: Eye.L
+    100010: Eye.L 1
+    100012: Eye.L_end
+    100014: Eye.R
+    100016: Eye.R 1
+    100018: Eye.R_end
+    100020: Eyelid.Bottom.L
+    100022: Eyelid.Bottom.R
+    100024: Eyelid.Top.L
+    100026: Eyelid.Top.L 1
+    100028: Eyelid.Top.L_end
+    100030: Eyelid.Top.R
+    100032: Eyelid.Top.R.001
+    100034: Eyelid.Top.R.001_end
+    100036: EyelidBottom.L
+    100038: EyelidBottom.L_end
+    100040: EyelidBottom.R
+    100042: EyelidBottom.R_end
+    100044: Foot.L.IK
+    100046: Foot.L.IK_end
+    100048: Foot.R.IK
+    100050: Foot.R.IK_end
+    100052: Hand.L
+    100054: Hand.L.IK
+    100056: Hand.L.IK_end
+    100058: Hand.L_end
+    100060: Hand.R
+    100062: Hand.R.IK
+    100064: Hand.R.IK_end
+    100066: Hand.R_end
+    100068: Head
+    100070: Head.001
+    100072: Head.002
+    100074: Hips
+    100076: Knee.L.PT
+    100078: Knee.L.PT_end
+    100080: Knee.R.PT
+    100082: Knee.R.PT_end
+    100084: LowerArm.L
+    100086: LowerArm.R
+    100088: LowerLeg.L
+    100090: LowerLeg.L_end
+    100092: LowerLeg.R
+    100094: LowerLeg.R_end
+    100096: LowerSpine
+    100098: Neck
+    100100: Root
+    100102: Shoulder.L
+    100104: Shoulder.R
+    100106: ShoulderConnector.L
+    100108: ShoulderConnector.R
+    100110: UpperArm.L
+    100112: UpperArm.R
+    100114: UpperLeg.L
+    100116: UpperLeg.R
+    400000: Armature
+    400002: //RootNode
+    400004: Chest
+    400006: CuteCharacter
+    400008: Eye.L
+    400010: Eye.L 1
+    400012: Eye.L_end
+    400014: Eye.R
+    400016: Eye.R 1
+    400018: Eye.R_end
+    400020: Eyelid.Bottom.L
+    400022: Eyelid.Bottom.R
+    400024: Eyelid.Top.L
+    400026: Eyelid.Top.L 1
+    400028: Eyelid.Top.L_end
+    400030: Eyelid.Top.R
+    400032: Eyelid.Top.R.001
+    400034: Eyelid.Top.R.001_end
+    400036: EyelidBottom.L
+    400038: EyelidBottom.L_end
+    400040: EyelidBottom.R
+    400042: EyelidBottom.R_end
+    400044: Foot.L.IK
+    400046: Foot.L.IK_end
+    400048: Foot.R.IK
+    400050: Foot.R.IK_end
+    400052: Hand.L
+    400054: Hand.L.IK
+    400056: Hand.L.IK_end
+    400058: Hand.L_end
+    400060: Hand.R
+    400062: Hand.R.IK
+    400064: Hand.R.IK_end
+    400066: Hand.R_end
+    400068: Head
+    400070: Head.001
+    400072: Head.002
+    400074: Hips
+    400076: Knee.L.PT
+    400078: Knee.L.PT_end
+    400080: Knee.R.PT
+    400082: Knee.R.PT_end
+    400084: LowerArm.L
+    400086: LowerArm.R
+    400088: LowerLeg.L
+    400090: LowerLeg.L_end
+    400092: LowerLeg.R
+    400094: LowerLeg.R_end
+    400096: LowerSpine
+    400098: Neck
+    400100: Root
+    400102: Shoulder.L
+    400104: Shoulder.R
+    400106: ShoulderConnector.L
+    400108: ShoulderConnector.R
+    400110: UpperArm.L
+    400112: UpperArm.R
+    400114: UpperLeg.L
+    400116: UpperLeg.R
+    2100000: CuteMaterial
+    2300000: Eye.L 1
+    2300002: Eye.R 1
+    2300004: Eyelid.Bottom.L
+    2300006: Eyelid.Bottom.R
+    2300008: Eyelid.Top.L 1
+    2300010: Eyelid.Top.R
+    3300000: Eye.L 1
+    3300002: Eye.R 1
+    3300004: Eyelid.Bottom.L
+    3300006: Eyelid.Bottom.R
+    3300008: Eyelid.Top.L 1
+    3300010: Eyelid.Top.R
+    4300000: Eye.R
+    4300002: Eyelid.Bottom.R
+    4300004: Eyelid.Top.R
+    4300006: Eye.L
+    4300008: Eyelid.Bottom.L
+    4300010: Eyelid.Top.L
+    4300012: CuteCharacter
+    7400000: Armature|Eat
+    7400002: Armature|Idle
+    7400004: Armature|JumpUp
+    7400006: Armature|Sleep1
+    7400008: Armature|Sleep2
+    7400010: Armature|Sleep3
+    7400012: Armature|Walk
+    7400014: Armature|Wave
+    9500000: //RootNode
+    13700000: CuteCharacter
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
