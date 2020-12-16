@@ -5,7 +5,7 @@ This repo is for [raywenderlich.com](https://www.raywenderlich.com/) books that 
 Links to book directories or zip files:
 
 |  Book                                                                                                      | Edition | Release Date |
-|------------------| --------------------------------------------------------------------------------------- |:-------:|:------------:|
+|----------------------------------------------------------------------------------------------------------- |:-------:|:------------:|
 | [Beat 'Em Up Game Starter Kit](https://github.com/raywenderlich/rw-deprecated-books/tree/tvt/Beat%20'Em%20Up%20Game%20Starter%20Kit) | 2.1     | 2016-10-16   |
 | [Platformer Game Starter Kit](https://github.com/raywenderlich/rw-deprecated-books/tree/tvt/Platformer%20Game%20Starter%20Kit%202.0) | 2.0     | 2016-10-16   |
 | [Space Game Starter Kit](https://github.com/raywenderlich/rw-deprecated-books/tree/tvt/Space%20Game%20Starter%20Kit%203.1) | 3.1     | 2016-10-16   |
