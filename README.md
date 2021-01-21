@@ -21,6 +21,8 @@ Links to book directories or zip files:
 | [iOS 10 by Tutorials](https://github.com/raywenderlich/rw-deprecated-books/tree/tvt/iOS_10_by_Tutorials_v1.0) | 1.0     | 2016-10-16   |
 | [iOS 11 by Tutorials](https://github.com/raywenderlich/rw-deprecated-books/releases/tag/i11t) | 1.1     | 2017-09-21   |
 | [tvOS Apprentice](https://github.com/raywenderlich/rw-deprecated-books/releases/tag/tvt) | 3.0     | 2017-10-02   |
+| [Beat ’Em Up Game Starter Kit - Unity](https://github.com/raywenderlich/rw-deprecated-books/tree/master/Beat%20'Em%20Up%20Game%20Starter%20Kit%20-%20Unity) | 1.0     | 2018-05-29   |
+| [Realm: Building Modern Swift Apps with Realm Database](https://github.com/raywenderlich/rw-deprecated-books/tree/master/Realm%20Building%20Modern%20Swift%20Apps%20with%20Realm%20Database%20v2.0) | 2.0     | 2019-03-22   |
 | [Unity AR & VR by Tutorials Part 1](https://github.com/raywenderlich/rw-deprecated-books/tree/master/Unity_AR_%26_VR_by_Tutorials_v1.0-materials-vr-part-1) | 1.03     | 2019-03-25   |
 | [Unity AR & VR by Tutorials Part 2](https://github.com/raywenderlich/rw-deprecated-books/tree/master/Unity_AR_%26_VR_by_Tutorials_v1.0-materials-vr-part-2) | 1.03     | 2019-03-25   |
 | [Unity AR & VR by Tutorials Part 3](https://github.com/raywenderlich/rw-deprecated-books/tree/master/Unity_AR_%26_VR_by_Tutorials_v1.0-materials-vr-part-3) | 1.03     | 2019-03-25   |
